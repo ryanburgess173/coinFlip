@@ -8,9 +8,9 @@ import java.util.Scanner; // library used for creating Scanner objects, used to 
 // class Main
 public class Main {
 	
-	static int number;
+    static int number;
 	
-	// read file method
+    // read file method
     public void readFile(String filename) throws IOException {
     	try(DataInputStream din = new DataInputStream(new FileInputStream(filename)) ){
     		number = din.readInt();
@@ -38,7 +38,7 @@ public class Main {
 			System.out.println("Issue with writing");
 		}
     }
-    // main method
+	// main method
 	// main function which will automatically execute when the program is run
 	public static void main(String[] args) throws IOException {
 		
